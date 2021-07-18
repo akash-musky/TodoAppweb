@@ -1,0 +1,342 @@
+/* styling  body */
+.body{
+    
+    margin: 0px;
+}
+
+
+.heading{
+    margin: auto;
+    margin-top: 10px;
+    width: 70%;
+    height: 1000px;
+    border: 2px solid black;
+    position: relative;
+}
+
+
+.Add
+{
+    display: grid;
+    grid-template-columns: 20px 150px ;
+    justify-content: flex-end;
+    align-items: center;
+    width: 200px;
+
+    grid-column-gap: 5px;
+    cursor: pointer;
+}
+
+.Add-item1{
+
+    background-color: red;
+    justify-self: flex-end;
+    color: black;
+    font-size: 25px;
+    
+    height: 28px;
+    width: 28px;
+    border-radius: 50% 50%;
+    text-align: center;
+    margin-top:    10px;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+.plus{
+    position: absolute;
+    left: 2px;
+    top: -8px;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.Add-item2{
+ font-size: 35px;
+ letter-spacing: 0.6px;
+ color: white;
+ 
+}
+
+.heading-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Styling logo of heading */
+
+.Task{
+    display: grid;
+    grid-template-columns: auto auto ;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column-gap: 5px;
+
+    color: white;
+}
+.Task-item1
+{
+    font-size: 45px;
+    font-weight: 600;
+    
+}
+.Task-item2
+{
+    font-size:45px;
+    font-weight: 300;
+}
+
+/* styling the font when there is no card in todo list */
+.No{
+    font-size:45px;
+    font-weight: 300;
+    color: white;
+}
+
+/* First popup which appear on clicking the top-right/heading plus icon */
+.Blur
+{
+     position: absolute;
+    border-radius: 10px;
+    border: 1px solid brown;
+    height: 200px;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    top: 30vh;
+    left: 35vw;
+    animation-name: slow-appear;
+    animation-duration: 2s;
+    visibility: hidden;
+    background-color: white;
+    animation-timing-function: linear;
+    z-index: 100;
+    
+}
+
+/* second popup style which will appear on clicking card plus icon */
+.Blur1
+{
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid brown;
+    height: 200px;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+     top: 10px;
+    animation-name: slow-appear;
+    animation-duration: 2s;
+    visibility: hidden;
+    background-color: white;
+    animation-timing-function: linear;
+    z-index: 100;
+    
+}
+
+/* styling plus icon */
+.Added{
+    margin: 10px 10px 10px 10px;
+    width: 80px;
+    height: 35px;
+    border: 0px;
+    background-color: #8a270e;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    
+    font-weight: bold;
+    /* for 3-d effect I have put first right and bottom shadow , left and top shadow with spread and color outset for uplift and inset for feel like depth */
+    box-shadow: 5px 5px 2px lightgray ;
+    cursor: pointer;
+    outline: 0;
+    
+    transition: transform 1s;
+}
+.Added:hover{
+    background-color: brown;
+    
+}
+.Added:active{
+    transform: scale(1.10,1.10);
+}
+.Added1{
+    margin: 10px 10px 10px 10px;
+    width: 80px;
+    height: 35px;
+    border: 0px;
+    background-color: #8a270e;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    
+    font-weight: bold;
+    /* for 3-d effect I have put first right and bottom shadow , left and top shadow with spread and color outset for uplift and inset for feel like depth */
+    box-shadow: 5px 5px 2px lightgray ;
+    cursor: pointer;
+    outline: 0;
+    
+    transition: transform 1s;
+}
+.Added1:hover{
+    background-color: brown;
+    
+}
+.Added1:active{
+    transform: scale(1.10,1.10);
+}
+
+.card
+{
+    position: relative;
+    min-height: 355px;
+    min-width: 229px;
+    border: 1px solid brown;
+    border-radius: 5px 5px 5px 5px;
+    
+
+    color: blue;
+}
+
+/* list style in which our all card will be added */
+.list-added{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    
+}
+
+@keyframes slow-appear{
+    0%{
+        top: 50vh;
+        left: 35vw;
+       
+    }
+   
+    100%{
+        
+        top: 30vh;
+      left: 35vw;
+    }
+    
+}
+.card-heading{
+    text-align: center;
+    font-weight: 100;
+    color: #8a270e;
+    font-size: 25px;
+    margin-top: 10px;
+    
+}
+
+.fa-trash{
+ 
+ color: rgb(76, 76, 124);
+ font-size: 25px;
+ position: absolute;
+ bottom: 2px;
+ right:  5px;
+}
+.fa-plus-circle
+{
+  color: rgb(76, 76, 124);
+ font-size: 25px;
+ position: absolute;
+ bottom: 2px;
+ right:  40px;
+}
+
+
+.completed{
+    text-decoration: line-through;
+    text-decoration-color: brown;
+}
+
+/* styling work item  */
+#content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.listbutton
+{
+    
+    width: 60px;
+    font-size: 10px;
+    height: 25px;
+    padding: 1px;
+    
+    margin-left: 20px;
+}
+
+.workspacing{
+    
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.newpage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    color: red;
+}
+
+.top{
+
+width: 100%;
+display: flex;
+justify-content: space-between;
+margin-top: -170px;
+margin-bottom: 70px;
+
+
+}
+
+/* styling the new page html which will zoome out */
+.viewlarge{
+
+    position: absolute;
+    border-radius: 10px;
+    
+    height: auto;
+    text-align: center;
+    width: 70%;
+    margin-left: -20%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+     top: 30vh;
+    left: 35vw; 
+    font-size: 0px;
+
+}
+
+.back{
+    position: absolute;
+    left: 2px;
+    top: -8px;
+    cursor: pointer;
+    color: white;
+    
+}
+.fullheading{
+    color: white;
+    font-size: 50px;
+}

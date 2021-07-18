@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/2d532544fa.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f54a57c81b.js" crossorigin="anonymous"></script>
+    <title>My ToDo List</title>
+</head>
+
+<body style="background-color: black;">
+
+   <section>
+         <div class="heading"> 
+                <div class="heading-container">
+                   <!-- heading logo left side -->
+                    <div class="Task">
+                             <div class="Task-item1">Tasks</div>
+                              <div class="Task-item2">List</div>
+                    </div>
+                  <!--Heading right  -->
+                   <div class="Add" id="main_pop" onclick="popup()">
+         
+                              <div class="Add-item1" > <h2 class="plus">+</h2></div>
+                              <div class="Add-item2">Add Item</div>
+                   </div>
+                  </div>
+            <hr class="mt-5">
+                 <!-- list item -->
+                <div class="list-added" id="card_container">
+
+                    <div class="No">There is'nt any todo list. Enjoy!!</div>
+
+                 </div>
+         </div>
+          <!-- add todolist pop up initialised with visibility hidden -->
+         <div class="Blur" id="Pop_up">
+                  <h2 class="h3 text-danger">Add New List</h2>
+                  <input id="inputtext" class="take-text" style="margin: auto; margin-bottom: 10px; width: 320px; height: 45px; border: 1px solid brown; text-align: center;"  type="text" placeholder="Add New List">
+                  <div   style="display: flex; justify-content: space-evenly; margin-bottom: 20px;">
+                  <button  class="Added">Add</button>
+                  <button class="Added Closed" onclick="Closepopup()" >Close</button>
+         </div>
+         <!-- add worklist pop up initialised with visibility hidden -->
+         <div class="Blur1">
+                  <h2 class="h3 text-danger">Add New List</h2>
+                  <input id="inputtext1" class="take-text" style="margin: auto; margin-bottom: 10px; width: 320px; height: 45px; border: 1px solid brown; text-align: center;"  type="text" placeholder="Add New List">
+                  <div   style="display: flex; justify-content: space-evenly; margin-bottom: 20px;">
+                  <button  class="Added1" >Add</button>
+                  <button class=" Added1"  onclick="SubClosedpopup()">Close</button>
+         </div>
+           
+     </section>
+       <!-- redirect page div -->
+         <div class="viewlarge">
+                  empty
+         </div>
+   </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+           
+           <script src="index.js"></script>
+           <script src="redirect.js"></script>
+           
+</html>
