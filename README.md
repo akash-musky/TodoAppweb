@@ -4,6 +4,7 @@ Here are snapshot of my todo website.
 
 Here Is The Link for the above todo list
 https://akash-musky.github.io/TodoAppweb/
+Please Open In Pc.
 
 ![image](https://user-images.githubusercontent.com/70103770/126048290-7e13be32-f737-4dc1-9b60-f6cbb447d60d.png)
 ![image](https://user-images.githubusercontent.com/70103770/126048302-544a18cc-2538-4531-b092-3d7021e5497b.png)
