@@ -1,5 +1,7 @@
 # ToDolist
-Hey  As keeping in mind all the tasks of the today and forth coming day  in the mind would be stressfull and boring. so to get rid of from those problems I have made ToDo list Websites. In which you can add your today and forth coming day tasks. You can even add all the subtasks like what to do today and tick up checkbox after the task  getting completed. I have used Html, Css, Javascript knowledge to implement this task. I deployed my websites over the github. FYI it work pretty well in laptop. I can even make it responsive further for the better use.
+Hey  As keeping in mind all the tasks of the today and forth coming day  in the mind would be stressfull and boring. so to get rid of from those problems I have made ToDo list Websites. In which you can add your today and forth coming day tasks. You can even add all the subtasks like what to do today and tick up checkbox after the task  getting completed. I have used Html, Css, Javascript knowledge to implement this task. I deployed my websites over the github. FYI it work pretty well in laptop. I can further make it responsive further for the better use.
+
+
 Here are snapshot of my todo website.
 
 Here Is The Link for the above todo list
